@@ -7,7 +7,7 @@ guard 'coffeescript', :output => 'spec/js' do
 end
 
 guard 'livereload', :apply_js_live => false do
-  watch(%r{(public/|test-js/).+\.(html)})
+  watch(%r{(public/|spec/).+\.(html)})
   watch(%r{^spec/js/.+\.js$})
   watch(%r{^public/js/.+\.js$})
 end
